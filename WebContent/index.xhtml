@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ui="http://java.sun.com/jsf/facelets"
+    xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:f="http://java.sun.com/jsf/core">
+	<head>
+		<title>Story Point Poker</title>
+		<link href="https://fonts.googleapis.com/css?family=Ultra" rel="stylesheet" /> 
+		<link rel="stylesheet" href="static/css/styles.css" />
+		
+	</head>
+	<body>
+		<div class="main-content">
+			<div class="login card">
+				<form>
+					<h1>
+						<span class="word"><span class="first">S</span><span class="remaining">tory</span></span>
+						<span class="word"><span class="first">P</span><span class="remaining">oint</span></span>
+					</h1>
+					<div class="error"></div>
+					<input type="text" name="username" class="username" placeholder="Username" />
+					<input type="checkbox" name="scrum-master" class="scrum-master" />
+					<div class="actions">
+						<input type="submit" name="Submit" value="Submit" />
+					</div>
+				</form>
+			</div>
+			<div class="content hidden">
+				<div class="status">
+					<div class="control-bar">
+					</div>
+					<div class="cards"></div>
+				</div>
+				<div class="vote-control">
+					<div class="content"></div>
+				</div>
+			</div>
+		</div>
+		<div class="templates">
+			<div class="card">
+				<div class="name"></div>
+				<div class="value"></div>
+			</div>
+		</div>
+	
+	
+		<script src="static/js/jquery.js"></script>
+		<script src="static/js/socket.js"></script>
+	</body>
+</html>

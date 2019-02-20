@@ -1,0 +1,86 @@
+html,
+body {
+	margin: 0;
+	padding: 0;
+	min-height: 100%;
+	height: 100%;
+	font-family: 'Ultra', serif;
+}
+
+h1 {
+	margin: 0;
+}
+
+.templates,
+.hidden {
+	display: none;
+}
+
+.main-content {
+	background: #1C4A89;
+	min-height: 100%;
+	padding: 50px;
+}
+
+.login {
+	width: 300px;
+	height: 350px;
+	margin: 0 auto;
+}
+
+.card {
+	padding: 50px;
+	background: #fff;
+	border-radius: 25px;
+	box-shadow: 10px 10px 20px #000;
+	border: 2px solid #117E88;
+}
+
+.status,
+.vote-control {
+	background: rgb(255,255,255,.7);
+	padding: 30px 0;
+	margin-bottom: 40px;
+	border-radius: 20px;
+	position: relative;
+}
+
+.status .control-bar {
+	position: absolute;
+	top: 5px;
+	right: 20px;
+}
+
+.status .cards,
+.vote-control {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.status .card {
+	width: 125px;
+	height: 200px;
+	text-align: center;
+	margin: 0 20px;
+	transition: background .02s;
+}
+
+.status .card.voted {
+	background: #baffba;
+}
+
+.status .card .name {
+	font-size: 22px;
+}
+
+.status .card .value {
+	font-size: 28px;
+	padding: 50px 0;
+}
+
+.team-member .state-end .card,
+.scrum-master .state-start .card[data-type="Start Round"],
+.scrum-master .state-end .card[data-type="End Round"] {
+	display: none;
+}
